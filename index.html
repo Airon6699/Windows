@@ -1,0 +1,569 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://png.pngtree.com/png-clipart/20190903/original/pngtree-windows-free-button-png-picture-png-image_4436107.png">
+    <meta name="theme-color" content="#172b2b">
+    <title>WINORA — Windows & Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-logo">WINORA<span>.</span></div>
+        <div class="loader-line"><span></span></div>
+        <p>CREATING YOUR VIEW</p>
+    </div>
+
+    <header class="header" id="home">
+        <div class="nav container">
+            <a href="#home" class="logo">WINORA<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Windows</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="favorites-btn" aria-label="Show favorites"><i class="fa-regular fa-heart"></i><span
+                        id="favorites-count">0</span></button>
+                <button id="cart-btn" aria-label="Open cart"><i class="fa-solid fa-bag-shopping"></i><span
+                        id="cart-count">0</span></button>
+                <button class="menu-btn" id="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content reveal">
+                <p class="eyebrow">WINDOW SYSTEMS · MODERN LIVING</p>
+                <h1>Open your home<br>to <span>better views.</span></h1>
+                <p class="hero-description">Beautifully engineered windows that bring natural light, quiet comfort and
+                    timeless design into every space.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-dark">Explore windows <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Request a consultation</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <h3>15+</h3>
+                        <p>Years of experience</p>
+                    </div>
+                    <div>
+                        <h3>2.5K+</h3>
+                        <p>Completed projects</p>
+                    </div>
+                    <div>
+                        <h3>10 yr</h3>
+                        <p>Product warranty*</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-label">DESIGNED AROUND YOUR VIEW</div>
+            <a href="#about" class="scroll-cue"><span></span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <section class="trust-strip">
+            <div class="container trust-items">
+                <span><i class="fa-solid fa-shield-halved"></i> Quality materials</span>
+                <span><i class="fa-solid fa-volume-low"></i> Quiet interiors</span>
+                <span><i class="fa-solid fa-temperature-half"></i> Thermal comfort</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> Made to measure</span>
+            </div>
+        </section>
+
+        <section class="about section container" id="about">
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&auto=format&fit=crop&q=85"
+                    alt="Modern house with large glass windows">
+                <div class="image-label"><strong>01 / 04</strong><span>ARCHITECTURE THROUGH LIGHT</span></div>
+            </div>
+            <div class="about-content reveal">
+                <p class="eyebrow">THE WINORA APPROACH</p>
+                <h2>More than a frame.<br><span>A better way to live.</span></h2>
+                <p>Windows shape the atmosphere of a home. We bring together considered proportions, durable materials
+                    and precise installation to make every room feel brighter and more comfortable.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fa-solid fa-sun"></i>
+                        <div>
+                            <h3>Natural daylight</h3>
+                            <p>Thoughtful glazing for brighter spaces.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-volume-low"></i>
+                        <div>
+                            <h3>Everyday comfort</h3>
+                            <p>Window systems designed to help reduce outside noise.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h3>Reliable construction</h3>
+                            <p>Quality profiles and fittings for long-term use.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#services" class="text-link">Discover our services <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="collection section" id="products">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">WINDOW COLLECTION</p>
+                        <h2>Find the right<br><span>frame for your space.</span></h2>
+                    </div>
+                    <p class="collection-description">Explore a selection of window systems for apartments, family homes
+                        and contemporary architecture.</p>
+                </div>
+
+                <div class="filters reveal">
+                    <button class="filter active" data-filter="all">All windows</button>
+                    <button class="filter" data-filter="pvc">PVC</button>
+                    <button class="filter" data-filter="aluminium">Aluminium</button>
+                    <button class="filter" data-filter="panoramic">Panoramic</button>
+                    <button class="filter" data-filter="balcony">Balcony</button>
+                </div>
+
+                <div class="products">
+                    <article class="product reveal" data-id="1" data-category="pvc">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&auto=format&fit=crop&q=85"
+                                alt="White framed window overlooking a garden">
+                            <span class="product-tag">POPULAR</span>
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">PVC WINDOWS</p>
+                            <h3>Classic White</h3>
+                            <p class="product-description">A clean, versatile profile for everyday spaces.</p>
+                            <div class="product-bottom">
+                                <strong>$180</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="2" data-category="pvc">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&auto=format&fit=crop&q=85"
+                                alt="Bright modern room with a large window">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">PVC WINDOWS</p>
+                            <h3>Urban Comfort</h3>
+                            <p class="product-description">A practical design for apartments and homes.</p>
+                            <div class="product-bottom">
+                                <strong>$220</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="3" data-category="aluminium">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&auto=format&fit=crop&q=85"
+                                alt="Modern aluminium window frame">
+                            <span class="product-tag">PREMIUM</span>
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">ALUMINIUM</p>
+                            <h3>Aluminium Edge</h3>
+                            <p class="product-description">Slim profiles for a refined architectural look.</p>
+                            <div class="product-bottom">
+                                <strong>$340</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="4" data-category="aluminium">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=900&auto=format&fit=crop&q=85"
+                                alt="Dark framed windows in a contemporary house">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">ALUMINIUM</p>
+                            <h3>Graphite Frame</h3>
+                            <p class="product-description">A bold dark finish for modern facades.</p>
+                            <div class="product-bottom">
+                                <strong>$390</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="5" data-category="panoramic">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&auto=format&fit=crop&q=85"
+                                alt="Floor to ceiling windows in a living room">
+                            <span class="product-tag">BEST VIEW</span>
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">PANORAMIC</p>
+                            <h3>Panorama View</h3>
+                            <p class="product-description">Wide glazing that opens up your interior.</p>
+                            <div class="product-bottom">
+                                <strong>$620</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="6" data-category="panoramic">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThcc95B9qOb3H2mFcdxOgvn8T1wLEPHIqelKkOJZq5Wvdc8qd-Y1SGOEM&s=10"
+                                alt="Large glass wall with a garden view">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">PANORAMIC</p>
+                            <h3>Open Horizon</h3>
+                            <p class="product-description">A generous glass area for open-plan rooms.</p>
+                            <div class="product-bottom">
+                                <strong>$700</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="7" data-category="balcony">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&auto=format&fit=crop&q=85"
+                                alt="Balcony doors and windows in a modern home">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">BALCONY</p>
+                            <h3>Balcony System</h3>
+                            <p class="product-description">Practical glazing for balconies and terraces.</p>
+                            <div class="product-bottom">
+                                <strong>$480</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="8" data-category="balcony">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&auto=format&fit=crop&q=85"
+                                alt="Modern house exterior with large window panels">
+                            <span class="product-tag">NEW</span>
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">BALCONY</p>
+                            <h3>Glass Balcony</h3>
+                            <p class="product-description">A bright, contemporary balcony solution.</p>
+                            <div class="product-bottom">
+                                <strong>$550</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="9" data-category="pvc">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&auto=format&fit=crop&q=85"
+                                alt="Bright room with a white framed window">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">PVC WINDOWS</p>
+                            <h3>Nordic Light</h3>
+                            <p class="product-description">Simple proportions with a bright finish.</p>
+                            <div class="product-bottom">
+                                <strong>$260</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="10" data-category="aluminium">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=900&auto=format&fit=crop&q=85"
+                                alt="Black aluminium window system">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">ALUMINIUM</p>
+                            <h3>Urban Black</h3>
+                            <p class="product-description">A crisp profile for distinctive architecture.</p>
+                            <div class="product-bottom">
+                                <strong>$420</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="11" data-category="panoramic">
+                        <div class="product-image">
+                            <img src="https://t4.ftcdn.net/jpg/09/91/79/35/360_F_991793561_XpzVHRcmWeC5Criu4bdBsMesOvXmREV1.jpg"
+                                alt="Panoramic window overlooking a landscaped yard">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">PANORAMIC</p>
+                            <h3>Garden View</h3>
+                            <p class="product-description">Connect indoor living with the outdoors.</p>
+                            <div class="product-bottom">
+                                <strong>$760</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product reveal" data-id="12" data-category="balcony">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg67RRC-usBO4sdYUMWxDE4-NYWGL--w5hKQMjU9PGLuPv_NHzj0CJEvQ&s=10"
+                                alt="Sliding glass doors opening to a balcony">
+                            <button class="like-btn" aria-label="Add to favorites"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-type">BALCONY</p>
+                            <h3>Slide & Open</h3>
+                            <p class="product-description">A sliding-style look for wider openings.</p>
+                            <div class="product-bottom">
+                                <strong>$590</strong>
+                                <button class="add-btn">Add to cart <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="catalog-note">*Prices shown are sample starting prices. Final cost depends on dimensions,
+                    glazing and installation.</p>
+            </div>
+        </section>
+
+        <section class="services section container" id="services">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">FROM FIRST MEASUREMENT TO INSTALLATION</p>
+                    <h2>We make it<br><span>simple.</span></h2>
+                </div>
+                <p class="collection-description">A clear process, careful planning and support at every stage of your
+                    window project.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card reveal">
+                    <span>01</span>
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <h3>Measurement</h3>
+                    <p>We help plan the right dimensions and configuration for your opening.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span>02</span>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Selection</h3>
+                    <p>Choose the frame style, glazing and finish that suit your space.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span>03</span>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Delivery</h3>
+                    <p>Your order is prepared and arranged for delivery to your project.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span>04</span>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Installation</h3>
+                    <p>Professional fitting helps your new windows perform as intended.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">INSPIRATION</p>
+                        <h2>Views worth<br><span>coming home to.</span></h2>
+                    </div>
+                    <p class="collection-description">Architectural styles that show how the right windows can transform
+                        a space.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project project-large reveal">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1400&auto=format&fit=crop&q=85"
+                            alt="Contemporary home with extensive glazing">
+                        <div><span>01 / RESIDENTIAL</span>
+                            <h3>Light-filled living</h3>
+                        </div>
+                    </article>
+                    <article class="project reveal">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1000&auto=format&fit=crop&q=85"
+                            alt="Modern house with dark window frames">
+                        <div><span>02 / MODERN</span>
+                            <h3>Clean architecture</h3>
+                        </div>
+                    </article>
+                    <article class="project reveal">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&auto=format&fit=crop&q=85"
+                            alt="Contemporary home with large windows">
+                        <div><span>03 / RESIDENTIAL</span>
+                            <h3>Connected spaces</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner section">
+            <div class="container banner-content reveal">
+                <p class="eyebrow">YOUR PROJECT STARTS HERE</p>
+                <h2>Make room<br>for more light.</h2>
+                <p>Tell us what you are planning. We will help you find a suitable window solution.</p>
+                <a href="#contact" class="btn btn-light">Plan your project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="faq section container">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">GOOD TO KNOW</p>
+                    <h2>Common <span>questions.</span></h2>
+                </div>
+            </div>
+            <div class="faq-list reveal">
+                <details>
+                    <summary>Can windows be made to custom dimensions?<i class="fa-solid fa-plus"></i></summary>
+                    <p>Window dimensions and configurations can be planned for your project. Contact the team with your
+                        measurements to discuss the available options.</p>
+                </details>
+                <details>
+                    <summary>What is the difference between PVC and aluminium?<i class="fa-solid fa-plus"></i></summary>
+                    <p>PVC and aluminium use different frame materials and have different design characteristics. The
+                        best option depends on the opening, appearance and project requirements.</p>
+                </details>
+                <details>
+                    <summary>Can I request installation?<i class="fa-solid fa-plus"></i></summary>
+                    <p>Use the contact details below to ask about measurement, delivery and installation for your
+                        location.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="contact section container" id="contact">
+            <div class="contact-text reveal">
+                <p class="eyebrow">LET'S TALK ABOUT YOUR PROJECT</p>
+                <h2>Your next view<br><span>starts here.</span></h2>
+                <p>Send us a message or contact the team directly. Share the type of window you need and we can discuss
+                    the next steps.</p>
+                <div class="contact-mini">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Consultations by appointment</span>
+                </div>
+            </div>
+            <form class="contact-card reveal" id="contact-form">
+                <label for="contact-name">Your name</label>
+                <input id="contact-name" name="name" type="text" placeholder="Enter your name" required>
+
+                <label for="contact-phone">Phone number</label>
+                <input id="contact-phone" name="phone" type="tel" placeholder="+998" required>
+
+                <label for="contact-message">Tell us about your project</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="I need PVC windows for..."
+                    required></textarea>
+
+                <button class="btn btn-dark" type="submit">Send request <i class="fa-solid fa-arrow-right"></i></button>
+                <p class="form-note" id="form-note">Demo form — connect a backend to receive real submissions.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <div>
+                <a href="#home" class="logo">WINORA<span>.</span></a>
+                <p>Windows designed around your life.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#products">Collection</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a class="footer-top" href="#home">Back to top ↑</a>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 WINORA. All rights reserved.</span>
+            <span>Designed for better living.</span>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <aside class="cart" id="cart">
+        <div class="cart-head">
+            <div>
+                <p class="eyebrow">YOUR SELECTION</p>
+                <h2>Your Cart</h2>
+            </div>
+            <button id="close-cart" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+        <div class="cart-bottom">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong>$<span id="cart-total">0</span></strong>
+            </div>
+            <button id="checkout">Continue</button>
+        </div>
+    </aside>
+
+    <template id="cart-template">
+        <div class="cart-item">
+            <div class="cart-item-info">
+                <h3 class="cart-item-name"></h3>
+                <p class="cart-item-price"></p>
+            </div>
+            <div class="cart-controls">
+                <button class="quantity-btn" data-action="minus">−</button>
+                <span class="cart-quantity">1</span>
+                <button class="quantity-btn" data-action="plus">+</button>
+                <button class="remove-item" aria-label="Remove item">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
